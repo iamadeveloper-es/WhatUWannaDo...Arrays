@@ -1,0 +1,57 @@
+*, *::before, *::after, 
+*:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Asap', sans-serif;
+    font-weight: var(--weight);
+    h1{
+        --weight: 700;
+        font-weight: var(--weight);
+        font-size: 38px;
+    }
+    h2{
+        --weight: 600;
+        font-weight: var(--weight);
+        font-size: 32px;
+    }
+    h3{
+        --weight: 500;
+        font-weight: var(--weight);
+        font-size: 28px;
+    }
+    h4{
+        --weight: 500;
+        font-weight: var(--weight);
+        font-size: 28px;
+    }
+    p{
+        --weight: 400;
+        font-weight: var(--weight);
+        font-size: 18px;
+    }
+    .section, header{
+        width: 100%;
+        max-width: 1140px;
+        @include marginAuto;
+    }
+    .section{
+        padding: 4rem 0;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        &.flex__center{
+            justify-content: center;
+        }
+    }
+    input[type=text]{
+        --raidus: 3px;
+        height: 3rem;
+        display: block;
+        padding: 1rem;
+        border: 1px solid var(--regularGrey);
+        border-radius: var(--radius);
+    }
+}

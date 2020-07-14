@@ -1,0 +1,13 @@
+.metodo-wrapper{
+    width: 50%;
+    .metodo__code--metodo{
+        --weight: 600;
+        color: var(--vueGreen);
+        font-size: 22px;
+        font-weight: var(--weight);
+    }
+    span.metodo__code--args{
+        --darkPink: #fd8eab;
+        color: var(--pink);
+    }
+}

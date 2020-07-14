@@ -1,0 +1,30 @@
+.output{
+    padding: 1rem;
+    background-color: var(--darkBlue);
+    display: inline-block;
+    margin: 0;
+    border-radius: var(--radius);
+    color: var(--white);
+}
+.resultado__output{
+    color: var(--yellow);
+}
+.explanation{
+    padding: 1rem;
+    border-radius: var(--radius);
+    display: inline-block;
+    &.success{
+        background-color: var(--vueGreen);
+        color: var(--white);
+    }
+    &.warning{
+        background-color: var(--yellow);
+        color: var(--black);
+    }
+    .result__underline{
+        --weight: 500;
+        color: var(--darkBlue);
+        font-weight: var(--weight);
+        font-size: 20px;
+    }
+}

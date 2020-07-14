@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What you wanna do... Arrays</title>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>What you wanna do... Arrays</h1>
+    </header>
+    <section id="add-delete" class="section">
+        <h2>Agregar o quitar elementos</h2>
+        <p class="lead">Todos estos métodos modifican el Array original</p>
+        <div class="flex-container">
+            <div class="metodo-wrapper">
+                <div class="metodo__content">
+                    <h3>1. Añadir valor al final</h3>
+                    <div class="metodo__code">
+                        <p>método <span class="metodo__code--metodo">push()</span></p>
+                    </div>
+
+                    <input id="inpt-push" type="text" placeholder="Añade un valor al Array">
+                    <button class="btn-custom btn-result">push()</button>
+                </div>
+
+            </div>
+            <div class="metodo-wrapper">
+                <div class="metodo__content">
+                    <h3>2. Remover el último índice</h3>
+                    <div class="metodo__code">
+                        <p>método <span class="metodo__code--metodo">pop()</span></p>
+                    </div>
+                    <button class="btn-custom btn-pop">pop()</button>
+                </div>
+            </div>
+            <div class="metodo-wrapper">
+                <div class="metodo__content">
+                    <h3>3. Añadir valor al principio</h3>
+                    <div class="metodo__code">
+                        <p>método <span class="metodo__code--metodo">unshift()</span></p>
+                    </div>
+                    <input id="inpt-unshift" type="text" placeholder="Añade un valor al Array">
+                    <button class="btn-custom btn-unshift">unshift()</button>
+                </div>
+            </div>
+            <div class="metodo-wrapper">
+                <div class="metodo__content">
+                    <h3>4. Remover el primer índice</h3>
+                    <div class="metodo__code">
+                        <p>método <span class="metodo__code--metodo">shift()</span></p>
+                    </div>
+                    <button class="btn-custom btn-shift">shift()</button>
+                </div>
+            </div>
+            <div class="metodo-wrapper">
+                    <div class="metodo__content">
+                        <h3>4. Remover el primer índice</h3>
+                        <div class="metodo__code">
+                            <p>método <span class="metodo__code--metodo">splice( <span class="metodo__code--args">indice, delete?, elementToPush?</span> )</span></p>
+                        </div>
+                        <p>Estos son los 3 parametros que recibe el metodo splice</p>
+                        <p><small>Introduce un índice del Array</small></p>
+                        <input id="inpt-splice-index" type="text" placeholder="Añade un índice">
+                        <p><small>Introduce un índice del Array del elemento que quieres eliminar</small> </p>
+                        <input id="inpt-splice-del" type="text" placeholder="Añade un índice borrar">
+                        <p><small>Introduce un para añadir al Array</small></p>
+                        <input id="inpt-splice-el" type="text" placeholder="Añade un elemento">
+                        <button class="btn-custom btn-splice">splice()</button>
+                    </div>
+                </div>
+        </div>
+
+        <div class="resultado-wrapper">
+            <h4>Resultado:</h4>
+            <p class="output">let arr = <span class="resultado__output">[one, two, three, four, five]</span></p>
+            <div class="explanation-container">
+                <p class="explanation"></p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/main.js"></script>
+
+</html>
